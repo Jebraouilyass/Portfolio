@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilyass Jebraoui</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <h1>Ilyass Jebraoui</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="headline">Building <span class="accent">innovative</span> digital experiences</h1>
+                <p class="subheadline">I'm a Mechanical engineering student & designer passionate about creating impactful solutions through Design.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                    <a href="#contact" class="btn secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="my_pic.jpg" alt="Ilyass Jebraoui" class="profile-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>A collection of my recent work and ongoing projects</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Project(1).jpg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Fluid Dynamics Simulation</h3>
+                        <p>A computational fluid dynamics project analyzing flow patterns and thermal distribution.</p>
+                        <div class="project-tags">
+                            <span>CFD</span>
+                            <span>Engineering</span>
+                            <span>Simulation</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image">Coming Soon</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Web Application</h3>
+                        <p>A responsive web application built with modern JavaScript frameworks.</p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>UI/UX</span>
+                        </div>
+                        <a href="#" class="project-link">In Progress →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-image">Coming Soon</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Machine Learning Model</h3>
+                        <p>An AI project focused on pattern recognition and predictive analytics.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>AI</span>
+                        </div>
+                        <a href="#" class="project-link">In Progress →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="my_pic.jpg" alt="Ilyass Jebraoui">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hi there! I'm Ilyass Jebraoui, a passionate engineering student with expertise in fluid dynamics and Mechanical parts design. With a background in Physics and Mathematics and a love for coding, I combine technical knowledge with creative problem-solving.</p>
+                    
+                    <p>My work focuses on creating efficient, user-friendly solutions that make a real impact. When I'm not designing, you can find me exploring new technologies or strengthening my Mathematics skills.</p>
+                    
+                    <div class="skills">
+                        <h3>Skills & Expertise</h3>
+                        <div class="skill-tags">
+                            <span>Solidworks</span>
+                            <span>CAD</span>
+                            <span>CAE</span>
+                            <span>3D Design</span>
+                            <span>Matlab</span>
+                            <span>Python</span>
+                            <span>Flow Simulation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Interested in working together? Let's connect!</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <p>ilyassjebraoui77@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Social</h3>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/ilyass-jebraoui-500478217/" target="_blank">LinkedIn</a>
+                            <a href="https://github.com/ilyass2004" target="_blank">GitHub</a>
+                            <a href="https://x.com/IlyassJebr" target="_blank">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 Ilyass Jebraoui. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Active navigation highlighting
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Initialize GSAP animations
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Fade in animations for sections
+        gsap.utils.toArray('.section-header, .project-card, .about-content, .contact-container').forEach(element => {
+            gsap.from(element, {
+                y: 50,
+                opacity: 0,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                }
+            });
+        });
+    </script>
+</body>
+</html>

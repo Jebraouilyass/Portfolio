@@ -134,6 +134,7 @@
 
     <section id="contact" class="contact-section">
         <div class="container">
+            revoir
             <div class="section-header">
                 <h2>Get In Touch</h2>
                 <p>Interested in working together? Let's connect!</p>
@@ -141,7 +142,7 @@
             
             <div class="contact-container">
                 <div class="contact-form">
-                    <form>
+                    <form id="contact-form" action="/send-email" method="POST">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" required>
@@ -154,14 +155,14 @@
                             <label for="message">Message</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn primary">Send Message</button>
+                         <button type="submit" class="btn primary">Send Message</button>
                     </form>
                 </div>
                 
                 <div class="contact-info">
                     <div class="info-item">
                         <h3>Email</h3>
-                        <p>ilyassjebraoui77@gmail.com</p>
+                        <p><a href="mailto:ilyassjebraoui@gmail.com">ilyassjebraoui@gmail.com</a></p>
                     </div>
                     <div class="info-item">
                         <h3>Social</h3>
@@ -238,6 +239,40 @@
                     toggleActions: "play none none none"
                 }
             });
+        });
+
+        // Handle form submission
+        document.getElementById('contact-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+            const submitButton = form.querySelector('button[type="submit"]');
+            
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+
+            try {
+                const response = await fetch('/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: new URLSearchParams(data).toString()
+                });
+
+                if (response.ok) {
+                    alert('Message sent successfully!');
+                    form.reset();
+                } else {
+                    alert('Failed to send message. Please try again.');
+                }
+            } catch (error) {
+                alert('An error occurred. Please try again later.');
+            } finally {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Send Message';
+            }
         });
     </script>
 </body>

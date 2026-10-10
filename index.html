@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ilyass Jebraoui — Mechanical Engineer</title>
-    <meta name="description" content="Portfolio of Ilyass Jebraoui – Mechanical Engineer specializing in CAD, FEA, and HVAC design.">
+    <meta name="description" content="Portfolio of Ilyass Jebraoui – Mechanical Engineer specializing in CAD, FEA, HVAC, and BIM Automation.">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+
     <!-- Navigation -->
     <header id="header">
         <div class="container navbar">
-            <a href="#home" class="logo">IJ</a>
+            <a href="#home" class="logo">IJ<span class="logo-dot">.</span></a>
             <nav>
                 <button class="hamburger" id="hamburger" aria-label="Toggle menu">
                     <span></span>
@@ -36,96 +37,110 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-bg-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-grid-bg"></div>
         <div class="container hero-inner">
-            <div class="hero-content">
-                <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="hero-name">Ilyass Jebraoui</h1>
-                <h2 class="hero-title">Mechanical Engineer</h2>
-                <p class="hero-description">Motivated Mechanical Engineer (4.7/5 GPA) with a strong foundation in complex mechanical design and modeling, system diagnostics and maintenance, and structural/thermal FEA.</p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
-                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">4.7</span>
-                        <span class="stat-label">GPA / 5</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-number">4</span>
-                        <span class="stat-label">Languages</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">CAD Tools</span>
-                    </div>
-                </div>
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for opportunities
             </div>
-            <div class="hero-image-wrapper">
-                <div class="hero-image-frame">
-                    <img src="public/my_pic.jpg" alt="Ilyass Jebraoui" class="hero-image">
+            <h1 class="hero-name">Ilyass Jebraoui</h1>
+            <div class="hero-role-wrapper">
+                <span class="hero-role-static">Mechanical Engineer —</span>
+                <span class="hero-role-dynamic" id="typed-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">Motivated Mechanical Engineer with a <strong>4.7/5 GPA</strong>, specialized in complex mechanical design, structural & thermal FEA, HVAC systems, and BIM automation.</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+                <a href="#contact" class="btn btn-glass">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="hero-metrics">
+                <div class="metric">
+                    <div class="metric-value">4.7<span class="metric-unit">/5</span></div>
+                    <div class="metric-label">GPA</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">4</div>
+                    <div class="metric-label">Languages</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">10+</div>
+                    <div class="metric-label">CAD & Sim Tools</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">2</div>
+                    <div class="metric-label">Internships</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section about-section">
+    <section id="about" class="section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Who I Am</span>
-                <h2>About Me</h2>
+                <span class="section-tag"><i class="fas fa-user"></i> About</span>
+                <h2>Who I Am</h2>
             </div>
             <div class="about-grid">
                 <div class="about-text">
-                    <p>I'm a Mechanical Engineering student at <strong>Dunaújváros University</strong>, Hungary, specializing in Maintenance and Diagnostics. With a passion for engineering design and simulation, I combine technical expertise with creative problem-solving to deliver impactful solutions.</p>
-                    <p>My experience spans from designing complex HVAC systems in Autodesk Revit to performing structural/thermal FEA simulations for aerospace applications. I'm also skilled in automation — building custom Python macros and Revit extensions to streamline engineering workflows.</p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
+                    <p class="about-lead">I'm a Mechanical Engineering student at <strong>Dunaújváros University</strong> in Hungary, specializing in Maintenance and Diagnostics.</p>
+                    <p>My experience spans from designing complex HVAC systems in Autodesk Revit to performing structural and thermal FEA simulations for aerospace applications. I also build custom Python macros and Revit extensions that automate engineering workflows — saving teams over 24 hours per week.</p>
+                    <div class="about-info-grid">
+                        <div class="info-chip">
                             <i class="fas fa-graduation-cap"></i>
                             <div>
-                                <h4>BSc Mechanical Engineering</h4>
-                                <p>Dunaújváros University, Hungary<br>2023 – 2027</p>
+                                <strong>BSc Mechanical Engineering</strong>
+                                <span>Dunaújváros University · 2023–2027</span>
                             </div>
                         </div>
-                        <div class="highlight-item">
+                        <div class="info-chip">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
-                                <h4>Based in</h4>
-                                <p>Dunaújváros, Hungary</p>
+                                <strong>Dunaújváros, Hungary</strong>
+                                <span>Open to relocation</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="about-languages">
-                    <h3><i class="fas fa-language"></i> Languages</h3>
+                    <h3><i class="fas fa-globe"></i> Languages</h3>
                     <div class="language-list">
                         <div class="language-item">
-                            <span class="lang-name">Arabic</span>
-                            <div class="lang-bar"><div class="lang-fill" style="width: 100%"></div></div>
-                            <span class="lang-level">Native</span>
+                            <div class="lang-info">
+                                <span class="lang-name">Arabic</span>
+                                <span class="lang-level">Native</span>
+                            </div>
+                            <div class="lang-bar"><div class="lang-fill" data-width="100"></div></div>
                         </div>
                         <div class="language-item">
-                            <span class="lang-name">English</span>
-                            <div class="lang-bar"><div class="lang-fill" style="width: 90%"></div></div>
-                            <span class="lang-level">Fluent</span>
+                            <div class="lang-info">
+                                <span class="lang-name">English</span>
+                                <span class="lang-level">Fluent</span>
+                            </div>
+                            <div class="lang-bar"><div class="lang-fill" data-width="90"></div></div>
                         </div>
                         <div class="language-item">
-                            <span class="lang-name">French</span>
-                            <div class="lang-bar"><div class="lang-fill" style="width: 90%"></div></div>
-                            <span class="lang-level">Fluent</span>
+                            <div class="lang-info">
+                                <span class="lang-name">French</span>
+                                <span class="lang-level">Fluent</span>
+                            </div>
+                            <div class="lang-bar"><div class="lang-fill" data-width="90"></div></div>
                         </div>
                         <div class="language-item">
-                            <span class="lang-name">German</span>
-                            <div class="lang-bar"><div class="lang-fill" style="width: 90%"></div></div>
-                            <span class="lang-level">Fluent</span>
+                            <div class="lang-info">
+                                <span class="lang-name">German</span>
+                                <span class="lang-level">Fluent</span>
+                            </div>
+                            <div class="lang-bar"><div class="lang-fill" data-width="85"></div></div>
                         </div>
                     </div>
                 </div>
@@ -134,58 +149,60 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="section experience-section">
+    <section id="experience" class="section section-alt">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">My Journey</span>
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Experience</span>
                 <h2>Work Experience</h2>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
+                    <div class="timeline-dot">
+                        <div class="dot-ping"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-top">
                             <div>
                                 <h3>Mechanical Engineer Intern</h3>
-                                <p class="timeline-company"><i class="fas fa-building"></i> MDI Project — Ankara, Türkiye</p>
+                                <p class="timeline-company">MDI Project · Ankara, Türkiye</p>
                             </div>
-                            <span class="timeline-date">Jun 2026 – Aug 2026</span>
+                            <span class="timeline-badge">Jun – Aug 2026</span>
                         </div>
-                        <ul class="timeline-details">
-                            <li>Engineered custom Python macros and Revit extensions, automating repetitive BIM tasks and reducing manual MEP modeling time for the engineering team by 24 hours per week.</li>
-                            <li>Collaborated with cross-functional engineering teams to design and coordinate complex HVAC systems in Autodesk Revit for large-scale commercial and infrastructure developments.</li>
+                        <ul>
+                            <li>Engineered custom Python macros and Revit extensions, automating repetitive BIM tasks and reducing manual MEP modeling time by <strong>24 hours/week</strong>.</li>
+                            <li>Collaborated with cross-functional teams to design and coordinate complex HVAC systems in Autodesk Revit for large-scale commercial projects.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-top">
                             <div>
                                 <h3>Mechanical Engineer Intern</h3>
-                                <p class="timeline-company"><i class="fas fa-building"></i> Tungsram Operations Kft — Budapest, Hungary</p>
+                                <p class="timeline-company">Tungsram Operations Kft · Budapest, Hungary</p>
                             </div>
-                            <span class="timeline-date">May 2025 – Jul 2025</span>
+                            <span class="timeline-badge">May – Jul 2025</span>
                         </div>
-                        <ul class="timeline-details">
+                        <ul>
                             <li>Performed Thermal and Structural simulations using Finite Element Analysis (FEA) tools to validate structural integrity.</li>
-                            <li>Gained hands-on experience in building prototypes using 3D printing, machining, sheet metal bending, and laser cutting.</li>
+                            <li>Gained hands-on experience building prototypes using 3D printing, CNC machining, sheet metal bending, and laser cutting.</li>
                         </ul>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-top">
                             <div>
                                 <h3>Thermal Simulation Engineer</h3>
-                                <p class="timeline-company"><i class="fas fa-satellite"></i> ARIS SAGE CubeSat Project (Student Initiative)</p>
+                                <p class="timeline-company">ARIS SAGE CubeSat Project · Student Initiative</p>
                             </div>
-                            <span class="timeline-date">Jun 2025 – Present</span>
+                            <span class="timeline-badge">Jun 2025 – Present</span>
                         </div>
-                        <ul class="timeline-details">
-                            <li>Utilized Finite Element Analysis (FEA) tools and Airbus Systema Thermica software to perform mission-critical thermal simulations and validate design integrity.</li>
-                            <li>Conducted high-complexity thermal and structural simulations to observe human cell behavior in non-gravitational environments.</li>
+                        <ul>
+                            <li>Utilized FEA tools and Airbus Systema Thermica to perform mission-critical thermal simulations and validate design integrity.</li>
+                            <li>Conducted high-complexity simulations to observe human cell behavior in non-gravitational environments.</li>
                         </ul>
                     </div>
                 </div>
@@ -194,85 +211,73 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section skills-section">
+    <section id="skills" class="section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">What I Use</span>
+                <span class="section-tag"><i class="fas fa-wrench"></i> Skills</span>
                 <h2>Skills & Tools</h2>
             </div>
             <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="skill-category-icon">
-                        <i class="fas fa-drafting-compass"></i>
-                    </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-drafting-compass"></i></div>
                     <h3>CAD & Design</h3>
-                    <div class="skill-tags">
+                    <div class="skill-pills">
                         <span>SolidWorks</span>
                         <span>Onshape</span>
-                        <span>Autodesk Fusion 360</span>
+                        <span>Fusion 360</span>
                         <span>AutoCAD</span>
                         <span>3D Max</span>
                         <span>Revit</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <div class="skill-category-icon">
-                        <i class="fas fa-calculator"></i>
-                    </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-calculator"></i></div>
                     <h3>FEA & Simulation</h3>
-                    <div class="skill-tags">
+                    <div class="skill-pills">
                         <span>Nastran / Patran</span>
                         <span>Ansys</span>
-                        <span>Airbus Systema Thermica</span>
+                        <span>Systema Thermica</span>
                         <span>Flow Simulation</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <div class="skill-category-icon">
-                        <i class="fas fa-wind"></i>
-                    </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-wind"></i></div>
                     <h3>HVAC & BIM</h3>
-                    <div class="skill-tags">
+                    <div class="skill-pills">
                         <span>HVAC Engineering</span>
                         <span>Autodesk Revit</span>
-                        <span>Building Information Modeling</span>
+                        <span>BIM</span>
                         <span>MEP Coordination</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <div class="skill-category-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Programming & Automation</h3>
-                    <div class="skill-tags">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming</h3>
+                    <div class="skill-pills">
                         <span>Python</span>
                         <span>MATLAB</span>
-                        <span>Revit API / Macros</span>
+                        <span>Revit API</span>
                         <span>BIM Automation</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <div class="skill-category-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Prototyping & Manufacturing</h3>
-                    <div class="skill-tags">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Prototyping</h3>
+                    <div class="skill-pills">
                         <span>3D Printing</span>
                         <span>CNC Machining</span>
-                        <span>Sheet Metal Bending</span>
+                        <span>Sheet Metal</span>
                         <span>Laser Cutting</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <div class="skill-category-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3>Other Skills</h3>
-                    <div class="skill-tags">
-                        <span>Electrical Equipment Testing</span>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Other</h3>
+                    <div class="skill-pills">
+                        <span>Electrical Testing</span>
                         <span>Maintenance</span>
                         <span>System Diagnostics</span>
-                        <span>Injection Mold Design</span>
+                        <span>Mold Design</span>
                     </div>
                 </div>
             </div>
@@ -280,74 +285,52 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section projects-section">
+    <section id="projects" class="section section-alt">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">My Work</span>
+                <span class="section-tag"><i class="fas fa-rocket"></i> Projects</span>
                 <h2>Featured Projects</h2>
             </div>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-satellite-dish"></i>
-                    </div>
+                <div class="project-card featured">
+                    <div class="project-number">01</div>
                     <h3>ARIS SAGE CubeSat — Thermal Simulation</h3>
-                    <p>Mission-critical thermal and structural FEA simulations for a student-built CubeSat, using Airbus Systema Thermica to validate design integrity for non-gravitational environments.</p>
+                    <p>Mission-critical thermal & structural FEA simulations for a student-built CubeSat using Airbus Systema Thermica, validating design integrity for non-gravitational environments.</p>
                     <div class="project-tags">
-                        <span>FEA</span>
-                        <span>Thermica</span>
-                        <span>Aerospace</span>
-                        <span>Simulation</span>
+                        <span>FEA</span><span>Thermica</span><span>Aerospace</span><span>Simulation</span>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-cube"></i>
-                    </div>
-                    <h3>STL File Repair & Optimization for 3D Printing</h3>
-                    <p>Transformed a raw 3D scanned STL file into a smooth, watertight, and print-ready model with optimized mesh quality for manufacturing.</p>
+                    <div class="project-number">02</div>
+                    <h3>BIM Automation — Python & Revit</h3>
+                    <p>Engineered custom Python macros and Revit extensions to automate MEP/BIM tasks, saving 24 hours per week across the engineering team.</p>
                     <div class="project-tags">
-                        <span>SolidWorks</span>
-                        <span>Mesh Optimization</span>
-                        <span>3D Printing</span>
+                        <span>Python</span><span>Revit API</span><span>Automation</span><span>BIM</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-number">03</div>
+                    <h3>STL File Repair & Optimization</h3>
+                    <p>Transformed raw 3D scanned STL files into smooth, watertight, print-ready models with optimized mesh quality for manufacturing.</p>
+                    <div class="project-tags">
+                        <span>SolidWorks</span><span>Mesh Optimization</span><span>3D Printing</span>
                     </div>
                     <a href="public/pdfs/Project1.pdf" class="project-link" target="_blank">View Details <i class="fas fa-external-link-alt"></i></a>
                 </div>
                 <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-industry"></i>
-                    </div>
-                    <h3>Injection Mold Design for Manufacturing</h3>
-                    <p>Designed a complete injection mold for the base of a horizontal Stirling motor in SolidWorks, including runner systems and cooling channels.</p>
+                    <div class="project-number">04</div>
+                    <h3>Injection Mold Design</h3>
+                    <p>Designed a complete injection mold for a horizontal Stirling motor base in SolidWorks, including runner systems and cooling channels.</p>
                     <div class="project-tags">
-                        <span>SolidWorks</span>
-                        <span>Mold Design</span>
-                        <span>Manufacturing</span>
+                        <span>SolidWorks</span><span>Mold Design</span><span>Manufacturing</span>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Horizontal Stirling Motor Design</h3>
-                    <p>Designed and modeled a fully functional horizontal Stirling motor in SolidWorks, including all key components, assembly constraints, and motion analysis.</p>
+                    <div class="project-number">05</div>
+                    <h3>Horizontal Stirling Motor</h3>
+                    <p>Designed and modeled a fully functional horizontal Stirling motor including all key components, assembly constraints, and motion analysis.</p>
                     <div class="project-tags">
-                        <span>SolidWorks</span>
-                        <span>Assembly</span>
-                        <span>Mechanical Design</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3>BIM Automation — Python & Revit Extensions</h3>
-                    <p>Engineered custom Python macros and Revit extensions to automate repetitive MEP/BIM tasks, saving 24 hours per week across the engineering team.</p>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>Revit API</span>
-                        <span>Automation</span>
-                        <span>BIM</span>
+                        <span>SolidWorks</span><span>Assembly</span><span>Mechanical Design</span>
                     </div>
                 </div>
             </div>
@@ -355,30 +338,26 @@
     </section>
 
     <!-- Awards Section -->
-    <section id="awards" class="section awards-section">
+    <section id="awards" class="section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Recognition</span>
+                <span class="section-tag"><i class="fas fa-trophy"></i> Awards</span>
                 <h2>Honours & Awards</h2>
             </div>
             <div class="awards-grid">
                 <div class="award-card">
-                    <div class="award-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <div class="award-content">
+                    <div class="award-icon-wrap"><i class="fas fa-trophy"></i></div>
+                    <div>
                         <h3>Hackathon National Stage Winner</h3>
-                        <p class="award-date">May 2026</p>
+                        <span class="award-date">May 2026</span>
                         <p>Won the national stage of a competitive hackathon, demonstrating rapid problem-solving and engineering innovation.</p>
                     </div>
                 </div>
                 <div class="award-card">
-                    <div class="award-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <div class="award-content">
+                    <div class="award-icon-wrap"><i class="fas fa-medal"></i></div>
+                    <div>
                         <h3>Stipendium Hungaricum: Student Excellence Award</h3>
-                        <p class="award-date">September 2024</p>
+                        <span class="award-date">September 2024</span>
                         <p>Recognized for outstanding academic performance and contribution to the university community.</p>
                     </div>
                 </div>
@@ -387,38 +366,39 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
+    <section id="contact" class="section section-alt">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Let's Connect</span>
-                <h2>Get In Touch</h2>
+                <span class="section-tag"><i class="fas fa-paper-plane"></i> Contact</span>
+                <h2>Let's Connect</h2>
+                <p class="section-subtitle">Interested in working together? Reach out through any of these channels.</p>
             </div>
-            <div class="contact-cards-centered">
-                    <a href="mailto:ilyassjebraoui77@gmail.com" class="contact-card">
-                        <i class="fas fa-envelope"></i>
-                        <h4>Email</h4>
-                        <p>ilyassjebraoui77@gmail.com</p>
-                    </a>
-                    <a href="tel:+36705589918" class="contact-card">
-                        <i class="fas fa-phone"></i>
-                        <h4>Phone</h4>
-                        <p>(+36) 705589918</p>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ilyass-jebraoui-500478217/" target="_blank" class="contact-card">
-                        <i class="fab fa-linkedin"></i>
-                        <h4>LinkedIn</h4>
-                        <p>Ilyass Jebraoui</p>
-                    </a>
-                    <a href="https://github.com/ilyass2004" target="_blank" class="contact-card">
-                        <i class="fab fa-github"></i>
-                        <h4>GitHub</h4>
-                        <p>ilyass2004</p>
-                    </a>
-                    <a href="https://www.upwork.com/freelancers/~013d14c0cb1d969066" target="_blank" class="contact-card">
-                        <i class="fas fa-briefcase"></i>
-                        <h4>Upwork</h4>
-                        <p>Freelancer Profile</p>
-                    </a>
+            <div class="contact-cards-grid">
+                <a href="mailto:ilyassjebraoui77@gmail.com" class="contact-card">
+                    <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+                    <h4>Email</h4>
+                    <p>ilyassjebraoui77@gmail.com</p>
+                </a>
+                <a href="tel:+36705589918" class="contact-card">
+                    <div class="cc-icon"><i class="fas fa-phone"></i></div>
+                    <h4>Phone</h4>
+                    <p>(+36) 705589918</p>
+                </a>
+                <a href="https://www.linkedin.com/in/ilyass-jebraoui-500478217/" target="_blank" class="contact-card">
+                    <div class="cc-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <h4>LinkedIn</h4>
+                    <p>Ilyass Jebraoui</p>
+                </a>
+                <a href="https://github.com/ilyass2004" target="_blank" class="contact-card">
+                    <div class="cc-icon"><i class="fab fa-github"></i></div>
+                    <h4>GitHub</h4>
+                    <p>ilyass2004</p>
+                </a>
+                <a href="https://www.upwork.com/freelancers/~013d14c0cb1d969066" target="_blank" class="contact-card">
+                    <div class="cc-icon"><i class="fas fa-briefcase"></i></div>
+                    <h4>Upwork</h4>
+                    <p>Freelancer Profile</p>
+                </a>
             </div>
         </div>
     </section>
@@ -427,14 +407,13 @@
     <footer>
         <div class="container footer-inner">
             <div class="footer-left">
-                <a href="#home" class="footer-logo">IJ</a>
-                <p>© 2025 Ilyass Jebraoui. All rights reserved.</p>
+                <a href="#home" class="footer-logo">IJ<span>.</span></a>
+                <p>© 2025 Ilyass Jebraoui</p>
             </div>
             <div class="footer-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -446,122 +425,92 @@
         </div>
     </footer>
 
-    <!-- Scroll to top button -->
+    <!-- Scroll to top -->
     <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
         <i class="fas fa-chevron-up"></i>
     </button>
 
     <script>
-        // Mobile menu toggle
+        // ===== Typing effect =====
+        const roles = ['CAD & Design', 'FEA Simulation', 'HVAC Engineering', 'BIM Automation', '3D Prototyping'];
+        let roleIndex = 0, charIndex = 0, isDeleting = false;
+        const typedEl = document.getElementById('typed-text');
+
+        function typeEffect() {
+            const currentRole = roles[roleIndex];
+            if (isDeleting) {
+                typedEl.textContent = currentRole.substring(0, charIndex--);
+                if (charIndex < 0) { isDeleting = false; roleIndex = (roleIndex + 1) % roles.length; }
+                setTimeout(typeEffect, 40);
+            } else {
+                typedEl.textContent = currentRole.substring(0, charIndex++);
+                if (charIndex > currentRole.length) { isDeleting = true; setTimeout(typeEffect, 1800); }
+                else setTimeout(typeEffect, 80);
+            }
+        }
+        typeEffect();
+
+        // ===== Mobile menu =====
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.getElementById('nav-menu');
-        
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        // Close menu on link click
+        hamburger.addEventListener('click', () => { hamburger.classList.toggle('active'); navMenu.classList.toggle('active'); });
         document.querySelectorAll('#nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
+            link.addEventListener('click', () => { hamburger.classList.remove('active'); navMenu.classList.remove('active'); });
         });
 
-        // Smooth scrolling
+        // ===== Smooth scrolling =====
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    const headerHeight = document.getElementById('header').offsetHeight;
-                    const targetPosition = target.offsetTop - headerHeight;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
+                    const offset = document.getElementById('header').offsetHeight;
+                    window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
                 }
             });
         });
 
-        // Active navigation highlighting
+        // ===== Active nav + header effect =====
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('nav ul li a');
-
-        function updateActiveNav() {
-            let current = '';
-            const headerHeight = document.getElementById('header').offsetHeight;
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - headerHeight - 100;
-                if (window.scrollY >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
-            });
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').substring(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        }
-
-        // Header scroll effect
         const header = document.getElementById('header');
-        function updateHeader() {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        }
-
-        // Scroll to top button
         const scrollTopBtn = document.getElementById('scroll-top');
-        function updateScrollTop() {
-            if (window.scrollY > 500) {
-                scrollTopBtn.classList.add('visible');
-            } else {
-                scrollTopBtn.classList.remove('visible');
-            }
-        }
 
-        scrollTopBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.addEventListener('scroll', () => {
+            // Active nav
+            let current = '';
+            const h = header.offsetHeight;
+            sections.forEach(s => { if (window.scrollY >= s.offsetTop - h - 100) current = s.id; });
+            navLinks.forEach(l => { l.classList.toggle('active', l.getAttribute('href').substring(1) === current); });
+            // Header
+            header.classList.toggle('scrolled', window.scrollY > 50);
+            // Scroll top
+            scrollTopBtn.classList.toggle('visible', window.scrollY > 500);
         });
 
-        // Intersection Observer for scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+        scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
+        // ===== Scroll animations =====
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-in');
-                }
-            });
-        }, observerOptions);
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in-view'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-        document.querySelectorAll('.timeline-item, .skill-category, .project-card, .award-card, .contact-card, .about-grid, .section-header, .hero-content, .hero-image-wrapper').forEach(el => {
-            el.classList.add('animate-target');
+        document.querySelectorAll('.timeline-item, .skill-card, .project-card, .award-card, .contact-card, .about-grid, .section-header, .hero-inner').forEach(el => {
+            el.classList.add('reveal');
             observer.observe(el);
         });
 
-        // Combined scroll handler
-        window.addEventListener('scroll', () => {
-            updateActiveNav();
-            updateHeader();
-            updateScrollTop();
-        });
-
-
-
-
-        // Initialize
-        updateActiveNav();
-        updateHeader();
+        // ===== Language bar animation =====
+        const langObserver = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.querySelectorAll('.lang-fill').forEach(bar => {
+                        bar.style.width = bar.dataset.width + '%';
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+        document.querySelectorAll('.about-languages').forEach(el => langObserver.observe(el));
     </script>
 </body>
 </html>
